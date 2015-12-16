@@ -22,3 +22,6 @@ All true logic is server-side, although it does rely on the browser's cache to a
 6. On, the client, this value is rendered in the DOM (not a very useful web page) via the static script asset at `public/render_tag.js`.
 7. Another static asset at `public/report_tag.js` is loaded, which tells the server what the value of the tag is (whether or not this was newly generated or loaded from cache).
 8. The server keeps a naive in-memory store of known browsers, including a simple little counter which gets logged to the console on each page request.
+
+## Caveat
+This, of course, breaks down when the user clears their cache. It does still satisfy the requirements of the test as far as I can tell (retains browser tagging regardless of cookies).
