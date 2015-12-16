@@ -2,7 +2,7 @@ This app is a very simplistic app designed to satisfy the requirements of the Au
 
 This uses only server-side logic (as long as you agree that utilizing the browser's cache doesn't constitute "logic").
 
-I used Express and bower (just to get jquery for convenience), thus to setup and run the app, do the following...
+I used Express and bower (just to get jquery for convenience). Thus, to setup and run the app, do the following...
 
 1. `npm install -g bower`
 2. `npm install`
